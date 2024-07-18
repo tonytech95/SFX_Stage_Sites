@@ -15,4 +15,4 @@ jobs:
     - name: 'Run Script'
       run: .\FQDN_to_IP.ps1
       env:
-        github_key: ${{ GitHub.token }}
+        github_key: ${{ secrets.Gist_Token }}
