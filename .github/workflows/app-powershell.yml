@@ -19,7 +19,7 @@ jobs:
     - name: check for changes
       run: git status
     - name: stage changed files
-      run: git add .
+      run: git add ipaddresses.txt
     - name: commit changed files
       run: git commit -m "Auto updating ipaddress.txt"
     - name: fetch from master
