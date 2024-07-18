@@ -1,4 +1,4 @@
-name: Deploy PowerShell project to Azure Function App
+name: Run Powershell Script to update Gist
 
 on:
   schedule:
@@ -14,3 +14,5 @@ jobs:
       
     - name: 'Run Script'
       run: .\FQDN_to_IP.ps1
+      env:
+        github_key: ${{ GitHub.token }}
