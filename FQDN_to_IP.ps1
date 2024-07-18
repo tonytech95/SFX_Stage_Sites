@@ -35,4 +35,4 @@ Invoke-RestMethod -Uri "https://api.github.com/gists/b8915f9d80a866f6c53c6323e97
     -Method Patch `
     -Headers $headers `
     -ContentType "application/x-www-form-urlencoded" `
-    -Body "{`"description`":`"Last Check time: $checktime`",`"files`":{`"README.md`":{`"content`":`"$ipAddressesString`"}}}"
+    -Body "{`"description`":`"Last Check time: $checktime`",`"files`":{`"SFX_Tester.txt`":{`"content`":`"$ipAddressesString`"}}}"
