@@ -1,0 +1,16 @@
+name: Deploy PowerShell project to Azure Function App
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+
+jobs:
+  build-and-deploy:
+    runs-on: windows-latest # For Linux, use ubuntu-latest
+    environment: dev
+    steps:
+    - name: 'Checkout GitHub Action'
+      uses: actions/checkout@v4
+      
+    - name: 'Run Script'
+      run: .\FQDN_to_IP.ps1
