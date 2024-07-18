@@ -28,7 +28,7 @@ $checktime = Get-Date
 # Update Github Gist
 $headers = @{
     "Accept" = "application/vnd.github+json"
-    "Authorization" = "Bearer `$`{`{ GitHub.token `}`}"
+    "Authorization" = "Bearer $env:github_key"
     "X-GitHub-Api-Version" = "2022-11-28"
 }
 Invoke-RestMethod -Uri "https://api.github.com/gists/b8915f9d80a866f6c53c6323e978ab7e" `
