@@ -15,7 +15,7 @@ jobs:
     - name: 'Run Script'
       run: .\FQDN_to_IP.ps1
     - name: switching from HTTPS to SSH
-      run: git remote set-url origin ${{ secrets.ssh }}
+      run: git remote set-url origin git@github.com:tonytech95/SFX_Stage_Sites.git
     - name: check for changes
       run: git status
     - name: stage changed files
