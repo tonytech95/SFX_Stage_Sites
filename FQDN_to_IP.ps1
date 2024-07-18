@@ -1,9 +1,4 @@
-param (
-    $hostnameFilePath = ".\hostnames.txt",
-    $ipAddressFilePath = ".\ipaddresses.txt"
-)
-
-# Read hostnames from the input file
+# Read FQDN from the array
 $hostnames = @('exn-api3-stage.sfxresorts.net','exn-api3.sfxresorts.net','exn3-stage.sfxresorts.com','www-stage.vacationclix.com','www-stage.sfxresorts.com','members-stage.vacationclix.com','members3-stage.sfxresorts.com','exn3.sfxresorts.com','exn3-dev.sfxresorts.com')
 
 # Initialize an array to store IP addresses
