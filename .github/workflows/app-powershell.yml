@@ -16,12 +16,4 @@ jobs:
       shell: pwsh
       run: .\FQDN_to_IP.ps1
     - name: 'Run git actions'
-      run: |
-        git remote set-url origin ${{ github.repositoryUrl }}
-        git status
-        git add ipaddresses.txt
-        git config user.email "tony.yu@techordia.com"
-        git config user.name "Tony Yu"
-        git commit -m "Auto updating ipaddress.txt"
-        git fetch origin master
-        git push origin HEAD:master
+      uses: stefanzweifel/git-auto-commit-action@v5
