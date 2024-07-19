@@ -10,7 +10,7 @@ if (!(Test-Path $ipAddressFilePath)) {
 }
 
 # Read hostnames from the input file
-$hostnames = @('exn-api3-stage.sfxresorts.net','exn-api3.sfxresorts.net','exn3-stage.sfxresorts.com','www-stage.vacationclix.com','www-stage.sfxresorts.com','members-stage.vacationclix.com','members3-stage.sfxresorts.com','exn3.sfxresorts.com','exn3-dev.sfxresorts.com')
+$hostnames = Get-Content -Path $hostnameFilePath
 
 # Initialize an array to store IP addresses
 $ipAddresses = @()
