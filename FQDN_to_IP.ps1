@@ -49,6 +49,6 @@ if ($areDifferences) {
 }
 else {
     # No differences found. Clean up the temporary file.
-    # Remove-Item -Path .\ipaddresses-tmp.txt -Force
+    Remove-Item -Path .\ipaddresses-tmp.txt -Force
     Write-Host "No differences found. IP addresses unchanged."
 }
