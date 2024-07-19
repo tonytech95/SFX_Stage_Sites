@@ -1,1 +1,3 @@
-# SFX_Stage_Sites
+# SFX Stage Sites
+
+## Automation to resolve stage sites IP and update ipaddresses.txt
