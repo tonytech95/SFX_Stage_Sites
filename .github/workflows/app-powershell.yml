@@ -2,7 +2,7 @@ name: Run Powershell Script to update Gist
 
 on:
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "*/30 * * * *"
 
 
 jobs:
