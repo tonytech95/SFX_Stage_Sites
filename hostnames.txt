@@ -8,3 +8,4 @@ members3-stage.sfxresorts.com
 exn3.sfxresorts.com
 exn3-dev.sfxresorts.com
 admin3-stage.vacationclix.com
+admin3.vacationclix.com
